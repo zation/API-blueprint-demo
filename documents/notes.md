@@ -12,9 +12,7 @@ Note list description
 
     + Headers
 
-            Content-Type: application/json
-            X-Request-ID: f72fc914
-            X-Response-Time: 4ms
+            Content-Type: application/json; charset=utf-8
 
     + Body
 
@@ -79,9 +77,7 @@ Note description
 
     + Headers
 
-            Content-Type: application/json
-            X-Request-ID: f72fc914
-            X-Response-Time: 4ms
+            Content-Type: application/json; charset=utf-8
 
     + Body
 

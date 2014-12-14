@@ -4,7 +4,7 @@
   "description": "A demo for API blueprint",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "gulp build && dredd ./.tmp/API.md http://localhost:3458",
     "start": "gulp build && api-mock ./.tmp/API.md --port 3457"
   },
   "repository": {
@@ -19,6 +19,8 @@
   "homepage": "https://github.com/zation/API-blueprint-demo",
   "devDependencies": {
     "api-mock": "^0.1.0",
+    "dredd": "^0.3.14",
+    "express": "^4.10.6",
     "gulp": "^3.8.10",
     "gulp-aglio": "git+https://git@github.com/zation/gulp-aglio.git",
     "gulp-concat": "^2.4.2",
