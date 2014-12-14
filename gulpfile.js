@@ -34,4 +34,12 @@ gulp.task('open', function() {
     }));
 });
 
+var concat = require('gulp-concat');
+
+gulp.task('build', function() {
+  return gulp.src(['documents/API.md', 'documents/*.md'])
+    .pipe(concat('API.md'))
+    .pipe(gulp.dest('./.tmp/'));
+});
+
 gulp.task('default', ['server', 'document', 'open']);
